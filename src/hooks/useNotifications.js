@@ -4,7 +4,6 @@ export function useNotifications() {
   const [unreadCount, setUnreadCount] = useState(0);
   const [loading, setLoading] = useState(false);
 
-  // تابع برای دریافت تعداد اعلان‌های خوانده نشده
   const fetchUnreadCount = useCallback(async () => {
     try {
       setLoading(true);
@@ -67,11 +66,9 @@ export function useNotifications() {
     }
   }, []);
 
-  // بارگذاری اولیه و polling برای آپدیت زنده
   useEffect(() => {
     fetchUnreadCount();
 
-    // polling هر 30 ثانیه برای آپدیت زنده
     const interval = setInterval(fetchUnreadCount, 30000);
 
     return () => clearInterval(interval);

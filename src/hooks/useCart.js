@@ -30,7 +30,7 @@ export const CartProvider = ({ children }) => {
       const newCart = [...prev, { 
         ...product, 
         addedAt: new Date().toISOString(),
-        quantity: 1 // اضافه کردن quantity
+        quantity: 1 
       }];
       return newCart;
     });

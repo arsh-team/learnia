@@ -1,3 +1,5 @@
+// Developed by Arshia Afshani
+
 import AIFeaturesSection from "../components/intro";
 import HeroSlider from "../components/bigSlider";
 import Header from "../components/header";

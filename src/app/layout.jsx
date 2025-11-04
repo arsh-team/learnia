@@ -1,3 +1,4 @@
+// Developed by Arshia Afshani
 import "./globals.css";
 import { CartProvider } from "../hooks/useCart";
 
